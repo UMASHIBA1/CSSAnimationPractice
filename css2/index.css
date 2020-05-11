@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes expand {
+  0% {
+    transform: scale(1) rotate(45deg);
+  }
+
+  100% {
+    transform: scale(100) rotate(45deg);
+  }
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #e4007f;
+  position: absolute;
+  overflow: hidden;
+}
+
+.target {
+  /* position: absolute; */
+  background-color: #e4007f;
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
+  animation-name: expand;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+#target1 {
+  width: 200px;
+  height: 200px;
+  animation-delay: 100ms;
+}
+
+#target2 {
+  width: 180px;
+  height: 180px;
+  animation-delay: 200ms;
+}
+
+#target3 {
+  width: 160px;
+  height: 160px;
+  animation-delay: 300ms;
+}
+
+#target4 {
+  width: 140px;
+  height: 140px;
+  animation-delay: 400ms;
+}
+
+#target5 {
+  width: 120px;
+  height: 120px;
+  animation-delay: 500ms;
+}
